@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8532ae4691f238b4f0dbcae77e64f881 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8532ae4691f238b4f0dbcae77e64f881" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8532ae4691f238b4f0dbcae77e64f881 = L.map(
+                "map_8532ae4691f238b4f0dbcae77e64f881",
+                {
+                    center: [48.0, 7.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3f9e97a3908f5dc58fd69dc459b8eba2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3f9e97a3908f5dc58fd69dc459b8eba2.addTo(map_8532ae4691f238b4f0dbcae77e64f881);
+        
+    
+            var circle_marker_b1f7c9d40547399f81a570d26c462829 = L.circleMarker(
+                [46.2276, 2.2137],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.0001, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "radius": 18.20164827701052, "stroke": true, "weight": 3}
+            ).addTo(map_8532ae4691f238b4f0dbcae77e64f881);
+        
+    
+        var popup_949c3dd5d2ada5cdd498358bc7807d9c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3a390a83c0fd4ef453e18d4bbbc087eb = $(`<div id="html_3a390a83c0fd4ef453e18d4bbbc087eb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4>France</h4>             <hr>             <b>Transactions:</b> 33,130<br>             <b>Fraudes:</b> 3<br>             <b>Taux de fraude:</b> 0.01%<br>             <b>Montant total:</b> 6,286,592.05€<br>             <b>Montant moyen:</b> 189.76€         </div>         </div>`)[0];
+                popup_949c3dd5d2ada5cdd498358bc7807d9c.setContent(html_3a390a83c0fd4ef453e18d4bbbc087eb);
+            
+        
+
+        circle_marker_b1f7c9d40547399f81a570d26c462829.bindPopup(popup_949c3dd5d2ada5cdd498358bc7807d9c)
+        ;
+
+        
+    
+    
+            var circle_marker_6ac77e644ea899bac3b61b38f7287dce = L.circleMarker(
+                [41.8719, 12.5674],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "radius": 9.189668111526117, "stroke": true, "weight": 3}
+            ).addTo(map_8532ae4691f238b4f0dbcae77e64f881);
+        
+    
+        var popup_e06b1588993e49fb3530ea66bc1bba1e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0701c4da5ed8bb3353d58492e475079f = $(`<div id="html_0701c4da5ed8bb3353d58492e475079f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4>Italie</h4>             <hr>             <b>Transactions:</b> 8,445<br>             <b>Fraudes:</b> 0<br>             <b>Taux de fraude:</b> 0.00%<br>             <b>Montant total:</b> 256,574.67€<br>             <b>Montant moyen:</b> 30.38€         </div>         </div>`)[0];
+                popup_e06b1588993e49fb3530ea66bc1bba1e.setContent(html_0701c4da5ed8bb3353d58492e475079f);
+            
+        
+
+        circle_marker_6ac77e644ea899bac3b61b38f7287dce.bindPopup(popup_e06b1588993e49fb3530ea66bc1bba1e)
+        ;
+
+        
+    
+    
+            var circle_marker_75da599add18d1049d6c2339b9e7f27e = L.circleMarker(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "radius": 1.1661903789690602, "stroke": true, "weight": 3}
+            ).addTo(map_8532ae4691f238b4f0dbcae77e64f881);
+        
+    
+        var popup_742e15b739bf3b51b62efca5f208e25a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d106136f54b823f07abf1184b6a431a = $(`<div id="html_4d106136f54b823f07abf1184b6a431a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4>Espagne</h4>             <hr>             <b>Transactions:</b> 136<br>             <b>Fraudes:</b> 0<br>             <b>Taux de fraude:</b> 0.00%<br>             <b>Montant total:</b> 7,579.31€<br>             <b>Montant moyen:</b> 55.73€         </div>         </div>`)[0];
+                popup_742e15b739bf3b51b62efca5f208e25a.setContent(html_4d106136f54b823f07abf1184b6a431a);
+            
+        
+
+        circle_marker_75da599add18d1049d6c2339b9e7f27e.bindPopup(popup_742e15b739bf3b51b62efca5f208e25a)
+        ;
+
+        
+    
+    
+            var circle_marker_525c2393dc52ec9f9285a87c48988cf3 = L.circleMarker(
+                [51.1657, 10.4515],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "radius": 2.826658805020514, "stroke": true, "weight": 3}
+            ).addTo(map_8532ae4691f238b4f0dbcae77e64f881);
+        
+    
+        var popup_1195bc3ecf996e9629037acb397a3e25 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_948cc397645dfefb50e5529a4d1f5ed9 = $(`<div id="html_948cc397645dfefb50e5529a4d1f5ed9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4>Allemagne</h4>             <hr>             <b>Transactions:</b> 799<br>             <b>Fraudes:</b> 0<br>             <b>Taux de fraude:</b> 0.00%<br>             <b>Montant total:</b> 156,732.37€<br>             <b>Montant moyen:</b> 196.16€         </div>         </div>`)[0];
+                popup_1195bc3ecf996e9629037acb397a3e25.setContent(html_948cc397645dfefb50e5529a4d1f5ed9);
+            
+        
+
+        circle_marker_525c2393dc52ec9f9285a87c48988cf3.bindPopup(popup_1195bc3ecf996e9629037acb397a3e25)
+        ;
+
+        
+    
+</script>
+</html>
